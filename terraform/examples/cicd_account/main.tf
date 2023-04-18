@@ -24,5 +24,5 @@ module "setup_cicd_account" {
   region                          = data.aws_region.current.name
   roles                           = var.cross_account_roles
   code_pipeline_build_stages      = var.code_pipeline_build_stages
-  git_repository_name             = var.git_repository_name
+  git_repository_name             = "cicd-test-project"
 }
